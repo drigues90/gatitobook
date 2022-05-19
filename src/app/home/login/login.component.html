@@ -26,8 +26,10 @@
     <app-mensagem *ngIf="campoSenha.invalid && campoSenha.touched" mensagem="usuario obrigatorio"></app-mensagem>
   </div>
 
-  <button type="submit" class="btn btn-primary btn-block btn-login"
+  <button type="submit" class="btn btn-primary btn-block"
     [disabled]="loginForm.invalid">
     Login
   </button>
 </form>
+
+<p>Não é usuario? <a [routerLink]="['novousuario']">Cadastre-se</a></p>
